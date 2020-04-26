@@ -16,7 +16,7 @@ request({ url, json:true},(error,{body})=>{
     else
     {
         const curData=body.current;
-        Callback(undefined,curData.weather_descriptions[0] + '. It is currently '+ curData.temperature + ' degrees out. It feels like '+ curData.feelslike + ' degrees.')
+        Callback(undefined,curData.weather_descriptions[0] + '. It is currently '+ curData.temperature + ' degrees out. It feels like '+ curData.feelslike + ' degrees. humidity is '+ curData.humidity)
        
     }
  
